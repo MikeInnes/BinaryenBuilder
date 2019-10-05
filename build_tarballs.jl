@@ -17,7 +17,7 @@ script = raw"""
 cd $WORKSPACE/srcdir
 cd binaryen/
 cmake -DCMAKE_INSTALL_PREFIX=$prefix -DCMAKE_TOOLCHAIN_FILE=/opt/$target/$target.toolchain .
-make
+make -j4
 make install
 
 """
